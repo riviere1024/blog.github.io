@@ -146,6 +146,142 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/01/03/Git-commit-%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E8%83%B8%E9%92%88.JPG">
+      <meta itemprop="name" content="AkibaAo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Aki's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/01/03/Git-commit-%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/" class="post-title-link" itemprop="url">Git commit 提交规范</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-01-03 16:48:58 / 修改时间：16:57:04" itemprop="dateCreated datePublished" datetime="2023-01-03T16:48:58+08:00">2023-01-03</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><strong>message 格式</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">type</span>&gt;</span>(<span class="tag">&lt;<span class="name">scope</span>&gt;</span>): <span class="tag">&lt;<span class="name">subject</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 空行 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 空行 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">footer</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center">字段</th>
+<th align="center">说明</th>
+<th align="center">是否必须</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><type></td>
+<td align="center">提交类别</td>
+<td align="center">是</td>
+</tr>
+<tr>
+<td align="center"><scope></td>
+<td align="center">用于说明 commit 影响的范围，建议填写影响的功能模块</td>
+<td align="center">否</td>
+</tr>
+<tr>
+<td align="center"><subject></td>
+<td align="center">commit 目的的简短描述，不超过50个字符</td>
+<td align="center">是</td>
+</tr>
+<tr>
+<td align="center"><body></td>
+<td align="center">描述当前修改的行为详细信息或修改的目的</td>
+<td align="center">否</td>
+</tr>
+<tr>
+<td align="center"><footer></td>
+<td align="center">一般用于描述<code>BREAKING CHANGE</code>，在项目开发中一般不需要填写，组件研发的工程需要填写</td>
+<td align="center">否</td>
+</tr>
+</tbody></table>
+<p><strong>type字段的提交类别</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">值</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">feat</td>
+<td align="center">添加新特性</td>
+</tr>
+<tr>
+<td align="center">fix</td>
+<td align="center">修复bug</td>
+</tr>
+<tr>
+<td align="center">docs</td>
+<td align="center">仅仅修改了文档</td>
+</tr>
+<tr>
+<td align="center">style</td>
+<td align="center">仅仅修改了空格、格式缩进、逗号等等，不改变代码逻辑</td>
+</tr>
+<tr>
+<td align="center">refactor</td>
+<td align="center">代码重构，没有添加新功能或者修复bug</td>
+</tr>
+<tr>
+<td align="center">test</td>
+<td align="center">增加测试用例</td>
+</tr>
+<tr>
+<td align="center">chore</td>
+<td align="center">改变构建流程、或者增加依赖库、工具等</td>
+</tr>
+<tr>
+<td align="center">revert</td>
+<td align="center">回滚到上一个版本</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2023/01/02/Hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E7%9A%84%E5%9B%BE%E7%89%87%E5%AF%BC%E5%85%A5%E5%92%8C%E9%83%A8%E7%BD%B2%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -169,10 +305,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-01-02 10:09:02 / 修改时间：17:00:14" itemprop="dateCreated datePublished" datetime="2023-01-02T10:09:02+08:00">2023-01-02</time>
+              <time title="创建时间：2023-01-02 10:09:02" itemprop="dateCreated datePublished" datetime="2023-01-02T10:09:02+08:00">2023-01-02</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-01-03 16:46:51" itemprop="dateModified" datetime="2023-01-03T16:46:51+08:00">2023-01-03</time>
+              </span>
 
           
 
@@ -188,7 +330,7 @@
           <p><em>不要安装插件！！</em> <em>不要安装插件！！</em> <em>不要安装插件！！</em></p>
 <p><strong>插件没用（震声）！</strong></p>
 <hr>
-<p><strong>Version info:</strong></p>
+<p><strong>Hexo Version info:</strong></p>
 <p>hexo: 6.3.0<br>hexo-cli: 4.3.0<br>os: win32 10.0.19045<br>node: 18.12.1<br>v8: 10.2.154.15-node.12<br>uv: 1.43.0<br>zlib: 1.2.11<br>brotli: 1.0.9<br>ares: 1.18.1<br>modules: 108<br>nghttp2: 1.47.0<br>napi: 8<br>llhttp: 6.0.10<br>openssl: 3.0.7+quic<br>cldr: 41.0<br>icu: 71.1<br>tz: 2022b<br>unicode: 14.0<br>ngtcp2: 0.8.1<br>nghttp3: 0.7.0</p>
 <hr>
 <p>在Typora下点击<code>文件-&gt;偏好设置-&gt;图像</code>，把<code>插入图片时</code>的动作改为<code>复制到指定路径</code>，输入<code>../imgs/$&#123;filename&#125;</code>，其中<code>../</code>表示当前文件所处文件夹的上层文件夹，<code>$&#123;filename&#125;</code>表示本文件的文件名。</p>
@@ -340,7 +482,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
